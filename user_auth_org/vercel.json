@@ -1,9 +1,14 @@
 {
-    "version": 2,
     "builds": [
-      { "src": "user_auth_org/wsgi.py", "use": "@vercel/python" }
+      {
+        "src": "user_auth_org/wsgi.py",
+        "use": "@vercel/python"
+      }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "user_auth_org/wsgi.py" }
+      {
+        "src": "/(.*)",
+        "dest": "user_auth_org/wsgi.py"
+      }
     ]
-  }
+}
