@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-96^i%a$dd46kdowegy!i&jn@z%9lqu!yx^38k5cf+$mw#ygwb1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["*", ".vercel.app"]
 
 
 # Application definition
@@ -68,7 +68,7 @@ TEMPLATES = [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
+                "django.contrib.messages.context_processors.messages",
             ],
         },
     },
@@ -91,14 +91,11 @@ WSGI_APPLICATION = 'user_auth_org.wsgi.application'
 #          default=os.getenv('DATABASE_URL')
 #      )
 #  }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': '20041200ku',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
