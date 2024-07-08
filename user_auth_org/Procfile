@@ -1,2 +1,0 @@
-web: gunicorn user_auth_org.wsgi --log-file -
-worker: celery -A user_auth_org worker --loglevel=info
