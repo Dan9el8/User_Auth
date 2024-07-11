@@ -92,12 +92,12 @@ WSGI_APPLICATION = 'user_auth_org.wsgi.application'
 #      )
 #  }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+#DATABASES = {
+    #'default': {
+       # 'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': BASE_DIR / 'db.sqlite3',
+   # }
+#}
 
 # Update the database configuration with $DATABASE_URL if set
 DATABASE_URL = os.environ.get('DATABASE_URL')
